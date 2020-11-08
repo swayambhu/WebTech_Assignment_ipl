@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif; 
+    background-image: url(https://i.pinimg.com/originals/f4/0c/fe/f40cfef2ef26c8f87ea65894d0ba41d7.jpg);
+    background-size: cover;
+    
+    
+}
+
+#topbar{
+    text-align: center;
+    box-shadow: 0 2px 4px #ccc;
+    padding: 16px;
+    background-color:#e6ffff ;
+}
+
+.menu-item{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgba(0,0,0, 0.8);     
+    margin: 0 16px;
+    padding: 16px;
+    letter-spacing: 1.5px;
+    
+}
+.brand-logo img{
+    
+    position: absolute;
+    height: 50px;
+}
+.menu-item:hover{
+    background-color: black;
+    color: white;
+}
+
+.styled-table{
+    border-collapse: collapse;
+    margin: 25px;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-collapse: collapse;
+    border-radius: 1em;
+    overflow: hidden;
+    box-shadow: 25px 30px 15px black;
+    margin: auto;
+    margin-top: 20px;
+    
+}
+
+.table-main-header{
+    background-color: #99ddff;
+}
+
+.table-img{
+    height: 65px;
+}
+
+.table-head{
+    background-color: #99ddff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td{
+    padding: 2px 5px;
+}
+
+.styled-table tbody tr{
+    border-bottom: 1px solid #dddddd; 
+    line-height: 1.6;
+}
+
+.styled-table tbody tr:nth-of-type(odd)
+{
+    background-color:#e6fff9 ;
+}
+.styled-table tbody tr:nth-of-type(even)
+{
+    background-color: #d6d6c2;
+}
+#card-grid{
+    padding: 4% 12%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.card{
+    width: calc(25% - 16px);
+    box-shadow: 10px 12px 9px black;
+    border-radius: 6px;
+    margin: 8px;
+    background-color: #d6d6c2;
+    
+}
+
+.card:hover{
+    animation: bounce 1.3s linear;
+}
+@keyframes bounce{
+    20%,50%,80%,to{
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(-30px);
+    }
+}
+.thumbnail{
+    width: 100%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    height: 150px;
+}
+.card a{
+    text-decoration: none;
+    
+}
+
+.card-label{
+    margin: 0;
+    padding: 12px;
+    letter-spacing: 1.2px;
+    
+}
+
+@media(max-width:600px){
+    .card{
+        width: 100% !important;
+        height: auto;
+    }
+}
